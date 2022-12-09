@@ -1,0 +1,28 @@
+service: which-episode-to-watch-again
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-east-1
+
+functions:
+  tvshow:
+    handler: handler.tvShow
+    events:
+      - http:
+          path: tv-shows
+          method: get
+          cors: false
+  random:
+    handler: handler.random
+    events:
+      - http:
+          path: random/{id}
+          method: get
+          cors: false
+          request:
+            parameters:
+              paths:
+                id: true

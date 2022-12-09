@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mongodb": "^4.12.1"
+  },
+  "name": "which-episode-to-watch-again-lambda"
+}

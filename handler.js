@@ -39,6 +39,8 @@ module.exports.tvShow = async (event, context) => {
       return {
         id: item._id,
         title: item.title,
+        enable: item.enable,
+        type: item.type
       };
     })
     .toArray();

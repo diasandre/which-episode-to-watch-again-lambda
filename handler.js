@@ -48,7 +48,7 @@ module.exports.tvShow = async (event, context) => {
   return {
     statusCode: 200,
     headers: {
-      "Access-Control-Allow-Origin": "https://which-episode-to-watch-again.netlify.app",
+      "Access-Control-Allow-Origin": "https://watch-roulette.netlify.app",
       "Access-Control-Allow-Credentials": true,
     },
     body: JSON.stringify(result),
@@ -94,7 +94,7 @@ module.exports.random = async (event, context) => {
   return {
     statusCode: 200,
     headers: {
-      "Access-Control-Allow-Origin": "https://which-episode-to-watch-again.netlify.app",
+      "Access-Control-Allow-Origin": "https://watch-roulette.netlify.app",
       "Access-Control-Allow-Credentials": true,
     },
     body: JSON.stringify(result),

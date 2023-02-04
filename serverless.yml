@@ -14,14 +14,18 @@ functions:
       - http:
           path: tv-shows
           method: get
-          cors: false
+          cors:
+            origins:
+              - https://watch-roulette.netlify.app/
   random:
     handler: handler.random
     events:
       - http:
           path: random/{id}
           method: get
-          cors: false
+          cors:
+            origins:
+              - https://watch-roulette.netlify.app/
           request:
             parameters:
               paths:
